@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10233f">
+  <meta name="description" content="Una comunidad universitaria para aprender, compartir y resolver dudas.">
+  <title>Campus Colectivo — Aprende en comunidad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+  <section class="welcome-screen" id="welcome-screen" aria-labelledby="welcome-title">
+    <header class="welcome-header">
+      <a class="brand" href="#" aria-label="Campus Colectivo, inicio">
+        <span class="brand-mark" aria-hidden="true">c<span>.</span></span>
+        <span>campus<span class="brand-light">colectivo</span></span>
+      </a>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar a modo oscuro" aria-pressed="false">
+        <span class="theme-icon" aria-hidden="true">◐</span><span class="theme-label">Modo oscuro</span>
+      </button>
+    </header>
+
+    <main class="welcome-layout" id="main-content">
+      <section class="welcome-copy">
+        <p class="eyebrow entrance entrance-one"><span class="eyebrow-dot"></span> Una comunidad para aprender juntos</p>
+        <h1 id="welcome-title" class="entrance entrance-two">Las buenas ideas<br>crecen <span>en comunidad.</span></h1>
+        <p class="welcome-description entrance entrance-three">Comparte lo que sabes, encuentra respuestas y conoce a estudiantes que también están construyendo su camino.</p>
+        <div class="welcome-benefits entrance entrance-four">
+          <div><span class="benefit-icon" aria-hidden="true">↗</span><span>Conversaciones por carrera y curso</span></div>
+          <div><span class="benefit-icon" aria-hidden="true">♡</span><span>Un espacio útil, cercano y tuyo</span></div>
+        </div>
+        <div class="hero-art entrance entrance-five" aria-hidden="true">
+          <svg viewBox="0 0 600 310" role="img">
+            <defs>
+              <linearGradient id="heroWash" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="var(--illustration-wash-start)"/>
+                <stop offset="1" stop-color="var(--illustration-wash-end)"/>
+              </linearGradient>
+              <linearGradient id="heroBook" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="var(--blue-bright)"/>
+                <stop offset="1" stop-color="var(--illustration-book)"/>
+              </linearGradient>
+            </defs>
+            <circle cx="315" cy="148" r="132" fill="url(#heroWash)"/>
+            <path d="M151 264c34-21 69-31 105-29 41 2 67 20 105 17 39-3 63-24 103-17 17 3 32 10 48 20v25H151z" fill="var(--ink-100)"/>
+            <path d="M178 101h149a9 9 0 0 1 9 9v112H178z" fill="var(--paper)" stroke="var(--ink-300)" stroke-width="3"/>
+            <path d="M193 121h118M193 140h91M193 159h108M193 178h76" stroke="var(--ink-200)" stroke-width="5" stroke-linecap="round"/>
+            <path d="M330 125c25-31 58-40 89-29 19 7 31 21 38 42-18 0-35 6-50 19-16 13-28 29-34 48-28-9-44-26-49-51-2-10 0-20 6-29z" fill="var(--blue-soft)" stroke="var(--ink-400)" stroke-width="3"/>
+            <path d="M359 192c10-40 36-68 78-83" fill="none" stroke="var(--blue)" stroke-width="5" stroke-linecap="round"/>
+            <path d="M251 229h132l-14 27H266z" fill="url(#heroBook)"/>
+            <path d="M263 218h131l-11 11H251z" fill="var(--ink-500)"/>
+            <path d="M286 211h125l-17 7H278z" fill="var(--ink-200)"/>
+            <path d="M408 72h37M426 54v37M467 116h23M478.5 104.5v23" stroke="var(--ink-500)" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="153" cy="150" r="6" fill="var(--red)"/>
+            <circle cx="454" cy="220" r="7" fill="var(--red)"/>
+            <path d="M111 228c0-10 8-18 18-18h16a4 4 0 0 1 4 4v19a4 4 0 0 1-4 4h-9l-8 9v-9h-1c-9 0-16-4-16-9z" fill="var(--paper)" stroke="var(--ink-400)" stroke-width="2"/>
+            <circle cx="126" cy="226" r="2" fill="var(--ink-600)"/><circle cx="136" cy="226" r="2" fill="var(--ink-600)"/><circle cx="146" cy="226" r="2" fill="var(--ink-600)"/>
+          </svg>
+        </div>
+      </section>
+
+      <section class="register-panel card" id="register-panel" aria-labelledby="register-title">
+        <div class="card-heading">
+          <div>
+            <p class="eyebrow">Tu espacio empieza aquí</p>
+            <h2 id="register-title">Crea tu perfil</h2>
+          </div>
+          <span class="step-count" id="step-count">01 / 03</span>
+        </div>
+        <div class="stepper" aria-label="Progreso del registro">
+          <span class="stepper-line"><span id="stepper-progress"></span></span>
+          <div class="stepper-step is-current" data-step-indicator="1"><span>1</span><small>Datos</small></div>
+          <div class="stepper-step" data-step-indicator="2"><span>2</span><small>Perfil</small></div>
+          <div class="stepper-step" data-step-indicator="3"><span>3</span><small>Listo</small></div>
+        </div>
+
+        <div class="register-content">
+          <form id="register-form" novalidate>
+            <section class="form-step is-active" data-form-step="1" aria-labelledby="step-one-title">
+              <h3 id="step-one-title">Cuéntanos quién eres</h3>
+              <p class="form-intro">Usaremos estos datos para presentarte en la comunidad.</p>
+              <label class="field-label" for="profile-name">Nombre completo</label>
+              <input id="profile-name" name="name" autocomplete="name" placeholder="Ej. Alex Rivera" required minlength="2">
+              <p class="field-error" id="name-error" aria-live="polite"></p>
+              <label class="field-label" for="profile-career">Carrera</label>
+              <select id="profile-career" name="career" required>
+                <option value="">Elige tu carrera</option>
+                <option>Administración de Empresas</option>
+                <option>Arquitectura</option>
+                <option>Comunicación</option>
+                <option>Derecho</option>
+                <option>Diseño</option>
+                <option>Ingeniería en Sistemas</option>
+                <option>Medicina</option>
+                <option>Psicología</option>
+                <option>Otra carrera</option>
+              </select>
+              <div id="other-career-field" hidden>
+                <label class="field-label" for="profile-other-career">¿Cuál es tu carrera?</label>
+                <input id="profile-other-career" name="otherCareer" placeholder="Escribe el nombre de tu carrera">
+              </div>
+              <p class="field-error" id="career-error" aria-live="polite"></p>
+              <label class="field-label" for="profile-year">Año de estudio</label>
+              <select id="profile-year" name="year" required>
+                <option value="">Selecciona tu año</option>
+                <option>Primer año</option><option>Segundo año</option><option>Tercer año</option>
+                <option>Cuarto año</option><option>Quinto año o más</option>
+              </select>
+              <p class="field-error" id="year-error" aria-live="polite"></p>
+              <div class="step-actions">
+                <span class="small-note">Solo toma un minuto.</span>
+                <button class="button button-primary" type="button" data-next-step="2">Continuar <span aria-hidden="true">→</span></button>
+              </div>
+            </section>
+
+            <section class="form-step" data-form-step="2" aria-labelledby="step-two-title" hidden>
+              <h3 id="step-two-title">Completa tu perfil</h3>
+              <p class="form-intro">Un poco más de contexto ayuda a que te encuentren.</p>
+              <label class="field-label" for="profile-email">Correo electrónico</label>
+              <input id="profile-email" name="email" type="email" autocomplete="email" placeholder="tu@universidad.edu" required>
+              <p class="field-error" id="email-error" aria-live="polite"></p>
+              <label class="field-label" for="profile-campus">Universidad o campus <span class="optional">(opcional)</span></label>
+              <input id="profile-campus" name="campus" placeholder="Ej. Campus Central">
+              <label class="field-label" for="profile-bio">Descripción breve</label>
+              <textarea id="profile-bio" name="bio" rows="3" maxlength="180" placeholder="¿Qué te interesa aprender o compartir?"></textarea>
+              <div class="character-count"><span id="bio-count">0</span> / 180</div>
+              <div class="step-actions">
+                <button class="button button-quiet" type="button" data-previous-step="1">← Volver</button>
+                <button class="button button-primary" type="button" data-next-step="3">Revisar perfil <span aria-hidden="true">→</span></button>
+              </div>
+            </section>
+
+            <section class="form-step" data-form-step="3" aria-labelledby="step-three-title" hidden>
+              <h3 id="step-three-title">¿Te representa?</h3>
+              <p class="form-intro">Este será tu perfil visible para otros estudiantes.</p>
+              <div class="review-profile" id="review-profile" aria-live="polite"></div>
+              <p class="field-error" id="form-error" aria-live="polite"></p>
+              <div class="step-actions">
+                <button class="button button-quiet" type="button" data-previous-step="2">← Editar</button>
+                <button class="button button-primary" type="submit">Crear mi perfil <span aria-hidden="true">→</span></button>
+              </div>
+            </section>
+          </form>
+        </div>
+        <div class="privacy-note"><span aria-hidden="true">◈</span> Tus datos se quedan en este navegador.</div>
+      </section>
+
+      <section class="register-panel summary-panel card" id="welcome-summary" hidden aria-labelledby="summary-title">
+        <div class="success-mark" aria-hidden="true">✓</div>
+        <p class="eyebrow">Listo para empezar</p>
+        <h2 id="summary-title">¡Qué gusto tenerte aquí!</h2>
+        <p class="summary-copy">Este es el resumen de tu perfil. Ya puedes entrar a Campus Colectivo.</p>
+        <div id="summary-profile" class="review-profile"></div>
+        <button class="button button-primary button-wide" id="enter-campus" type="button">Entrar a la comunidad <span aria-hidden="true">→</span></button>
+      </section>
+    </main>
+    <footer class="welcome-footer">Hecho para aprender mejor, juntos. <span>© Campus Colectivo</span></footer>
+  </section>
+
+  <div class="app-screen" id="app-screen" hidden>
+    <header class="app-header">
+      <a class="brand" href="#" data-view-link="feed" aria-label="Campus Colectivo, inicio">
+        <span class="brand-mark" aria-hidden="true">c<span>.</span></span>
+        <span>campus<span class="brand-light">colectivo</span></span>
+      </a>
+      <div class="header-center"><span class="header-status"></span> Comunidad universitaria</div>
+      <div class="header-actions">
+        <button class="theme-toggle compact-toggle" type="button" data-theme-toggle aria-label="Cambiar tema" aria-pressed="false"><span class="theme-icon" aria-hidden="true">◐</span><span class="theme-label">Tema</span></button>
+        <button class="profile-chip" type="button" data-view-link="profile" aria-label="Ver mi perfil">
+          <span class="avatar avatar-small" data-current-avatar>CC</span><span class="profile-chip-name" data-current-name>Mi perfil</span><span class="profile-chevron" aria-hidden="true">⌄</span>
+        </button>
+      </div>
+    </header>
+
+    <div class="app-layout">
+      <aside class="sidebar" aria-label="Navegación principal">
+        <div class="sidebar-profile">
+          <span class="avatar avatar-large" data-current-avatar>CC</span>
+          <div><strong data-current-name>Mi perfil</strong><small data-current-career>Estudiante</small></div>
+        </div>
+        <nav class="main-nav">
+          <button class="nav-link is-active" type="button" data-view-link="feed"><span aria-hidden="true">⌂</span> Inicio</button>
+          <button class="nav-link" type="button" data-view-link="activity"><span aria-hidden="true">◫</span> Mi actividad</button>
+          <button class="nav-link" type="button" data-view-link="profile"><span aria-hidden="true">◎</span> Mi perfil</button>
+        </nav>
+        <div class="sidebar-section">
+          <div class="sidebar-section-heading"><span>Mis espacios</span><span class="section-count">4</span></div>
+          <div id="sidebar-groups" class="sidebar-groups"></div>
+        </div>
+        <div class="sidebar-bottom">
+          <div class="sidebar-tip"><span class="tip-sparkle" aria-hidden="true">✳</span><p>Una pregunta bien hecha puede ayudar a toda tu comunidad.</p></div>
+          <button class="nav-link logout-link" id="change-profile" type="button"><span aria-hidden="true">↪</span> Cambiar perfil</button>
+        </div>
+      </aside>
+
+      <main class="app-main" id="app-main">
+        <section class="app-view is-visible" id="view-feed" data-view="feed" aria-labelledby="feed-title">
+          <div class="feed-heading">
+            <div>
+              <p class="eyebrow" id="feed-eyebrow">MARTES, 27 DE OCTUBRE</p>
+              <h1 id="feed-title">Tu comunidad, <span>en movimiento.</span></h1>
+              <p class="view-subtitle">Ideas, preguntas y hallazgos de estudiantes como tú.</p>
+            </div>
+            <button class="button button-primary new-post-button" type="button" id="open-composer"><span aria-hidden="true">＋</span> Nueva publicación <kbd>N</kbd></button>
+          </div>
+          <section class="welcome-strip card" aria-label="Bienvenida">
+            <div class="strip-copy"><span class="strip-icon" aria-hidden="true">✳</span><div><strong>Este espacio también es tuyo.</strong><p>Comparte una idea, una pregunta o algo que te haya servido esta semana.</p></div></div>
+            <button class="text-button" type="button" id="strip-compose">Compartir algo <span aria-hidden="true">→</span></button>
+          </section>
+          <div class="feed-grid">
+            <div class="feed-column">
+              <section class="feed-controls card" aria-label="Buscar y filtrar publicaciones">
+                <label class="search-field"><span aria-hidden="true">⌕</span><input id="search-posts" type="search" placeholder="Busca ideas, temas o personas" aria-label="Buscar publicaciones"></label>
+                <div class="filter-row">
+                  <label class="filter-select"><span class="sr-only">Filtrar por tipo</span><select id="filter-type"><option value="">Todos los tipos</option><option value="text">Texto</option><option value="question">Duda</option><option value="material">Material</option></select></label>
+                  <label class="filter-select"><span class="sr-only">Filtrar por grupo</span><select id="filter-group"><option value="">Todos los grupos</option></select></label>
+                  <label class="filter-select"><span class="sr-only">Filtrar por etiqueta</span><select id="filter-tag"><option value="">Todas las etiquetas</option><option>#duda</option><option>#apuntes</option><option>#examen</option><option>#proyecto</option><option>#lectura</option></select></label>
+                </div>
+              </section>
+              <div class="feed-toolbar"><h2 id="feed-list-title">Lo que está pasando</h2><span id="post-count-label" class="muted-label"></span></div>
+              <div class="post-list" id="post-list" aria-live="polite" aria-busy="false"></div>
+            </div>
+            <aside class="feed-aside">
+              <section class="side-card card">
+                <div class="side-card-heading"><div><p class="eyebrow">TU COMUNIDAD</p><h2>Espacios activos</h2></div><span class="mini-compass" aria-hidden="true">✳</span></div>
+                <div id="active-groups" class="active-groups"></div>
+                <button class="side-link" type="button" data-view-link="activity">Ver mi actividad <span aria-hidden="true">→</span></button>
+              </section>
+              <section class="side-quote">
+                <span aria-hidden="true">“</span><p>Aprender es mejor cuando las ideas se comparten.</p><small>Una comunidad crece así</small>
+              </section>
+            </aside>
+          </div>
+        </section>
+
+        <section class="app-view" id="view-activity" data-view="activity" aria-labelledby="activity-title" hidden>
+          <div class="page-heading">
+            <p class="eyebrow">TU CAMINO EN COMUNIDAD</p>
+            <h1 id="activity-title">Mi actividad<span>.</span></h1>
+            <p class="view-subtitle">Un vistazo a lo que has compartido y a las conversaciones que has iniciado.</p>
+          </div>
+          <div class="stat-grid">
+            <article class="stat-card card"><span class="stat-icon" aria-hidden="true">↗</span><span class="stat-label">Publicaciones</span><strong data-stat="posts">0</strong><small>Lo que has compartido</small></article>
+            <article class="stat-card card"><span class="stat-icon likes-stat" aria-hidden="true">♡</span><span class="stat-label">Me gusta recibidos</span><strong data-stat="likes">0</strong><small>Ideas que resonaron</small></article>
+            <article class="stat-card card"><span class="stat-icon" aria-hidden="true">◌</span><span class="stat-label">Comentarios</span><strong data-stat="comments">0</strong><small>Conversaciones abiertas</small></article>
+          </div>
+          <div class="activity-grid">
+            <section class="chart-card card">
+              <div class="chart-heading"><div><p class="eyebrow">EN PERSPECTIVA</p><h2>Publicaciones por tipo</h2></div><span class="chart-period">Todo el tiempo</span></div>
+              <div id="type-chart" class="type-chart"></div>
+            </section>
+            <section class="chart-card card">
+              <div class="chart-heading"><div><p class="eyebrow">TU RITMO</p><h2>Últimos 7 días</h2></div><span class="chart-period">Actividad</span></div>
+              <div id="week-chart" class="week-chart"></div>
+            </section>
+            <section class="chart-card card heatmap-card">
+              <div class="chart-heading"><div><p class="eyebrow">CONSTANCIA</p><h2>Mapa de actividad</h2></div><span class="chart-period">Últimas 8 semanas</span></div>
+              <div id="heatmap-chart" class="heatmap-chart"></div>
+            </section>
+          </div>
+          <section class="history-card card">
+            <div class="history-heading"><div><p class="eyebrow">TU REGISTRO</p><h2>Historial de interacciones</h2><p>Publicaciones, likes, comentarios y eliminaciones, con fecha y hora.</p></div>
+              <div class="history-actions"><button class="button button-secondary" id="export-history" type="button">↓ Exportar CSV</button><button class="button button-quiet" id="print-history" type="button">Imprimir / PDF</button></div>
+            </div>
+            <div class="history-table-wrap"><table class="history-table"><thead><tr><th>Actividad</th><th>Detalle</th><th>Fecha y hora</th></tr></thead><tbody id="history-list"></tbody></table></div>
+            <p class="empty-history" id="empty-history" hidden>Aún no hay interacciones. Cuando participes en la comunidad, aparecerán aquí.</p>
+          </section>
+          <section class="data-tools card">
+            <div><span class="data-tool-icon" aria-hidden="true">⌁</span><div><strong>Publicaciones de ejemplo</strong><p>Los ejemplos ayudan a explorar el espacio. Puedes quitarlos cuando quieras.</p></div></div>
+            <button class="button button-quiet" id="clear-examples" type="button">Limpiar ejemplos</button>
+          </section>
+        </section>
+
+        <section class="app-view" id="view-profile" data-view="profile" aria-labelledby="profile-title" hidden>
+          <div class="page-heading">
+            <p class="eyebrow">TU IDENTIDAD UNIVERSITARIA</p>
+            <h1 id="profile-title">Mi perfil<span>.</span></h1>
+            <p class="view-subtitle">Un perfil sencillo para que tus compañeros sepan quién está detrás de las ideas.</p>
+          </div>
+          <section class="profile-page-card card" id="profile-page-card"></section>
+        </section>
+      </main>
+    </div>
+    <nav class="mobile-nav" aria-label="Navegación móvil">
+      <button class="is-active" type="button" data-view-link="feed"><span aria-hidden="true">⌂</span><small>Inicio</small></button>
+      <button type="button" data-view-link="activity"><span aria-hidden="true">◫</span><small>Actividad</small></button>
+      <button type="button" data-view-link="profile"><span aria-hidden="true">◎</span><small>Perfil</small></button>
+      <button type="button" id="mobile-compose"><span aria-hidden="true">＋</span><small>Publicar</small></button>
+    </nav>
+  </div>
+
+  <dialog class="composer-dialog" id="composer-dialog" aria-labelledby="composer-title">
+    <form id="composer-form" class="composer-form">
+      <div class="dialog-heading"><div><p class="eyebrow">HAZ QUE CUENTE</p><h2 id="composer-title">Nueva publicación</h2></div><button class="icon-button" type="button" id="close-composer" aria-label="Cerrar">×</button></div>
+      <label class="field-label" for="post-kind">¿Qué quieres compartir?</label>
+      <select id="post-kind" name="type" required><option value="text">Una idea o experiencia</option><option value="question">Tengo una duda</option><option value="material">Material académico</option></select>
+      <label class="field-label" for="post-group">Grupo</label>
+      <select id="post-group" name="group" required></select>
+      <label class="field-label" for="post-content">Tu publicación</label>
+      <textarea id="post-content" name="content" rows="5" maxlength="700" required placeholder="Escribe con claridad. Tu idea puede ser justo lo que alguien necesita leer."></textarea>
+      <div class="composer-footer-note"><span>Usa #etiquetas para que sea más fácil encontrar tu publicación.</span><span id="post-character-count">0 / 700</span></div>
+      <div id="resource-field" hidden><label class="field-label" for="post-resource">Enlace al material <span class="optional">(opcional)</span></label><input id="post-resource" name="resourceUrl" type="url" placeholder="https://..."></div>
+      <p class="field-error" id="composer-error" aria-live="polite"></p>
+      <div class="dialog-actions"><button class="button button-quiet" type="button" id="cancel-composer">Cancelar</button><button class="button button-primary" type="submit">Publicar <span aria-hidden="true">→</span></button></div>
+    </form>
+  </dialog>
+
+  <div class="toast-region" id="toast-region" role="status" aria-live="polite" aria-atomic="true"></div>
+  <script src="app.js"></script>
+</body>
+</html>
